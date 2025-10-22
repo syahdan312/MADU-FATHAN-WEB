@@ -156,47 +156,46 @@
     </div>
   </section>
 
-  <!-- Kontak -->
-  <section id="kontak" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-8 text-gray-800">Hubungi Kami</h2>
-      <p class="text-gray-600 mb-6">
-        Ingin memesan madu Fathan atau punya pertanyaan? Hubungi kami melalui WhatsApp atau media sosial berikut:
-      </p>
-      <div class="space-y-3 text-gray-700">
-        <p>📱 WhatsApp: <a href="https://wa.me/6281234567890" class="text-yellow-600 font-semibold">+62 812-3456-7890</a></p>
-        <p>📸 Instagram: <a href="https://instagram.com/fathanstore" class="text-yellow-600 font-semibold">@fathanstore</a></p>
-        <p>🎵 TikTok: <a href="https://tiktok.com/@fathanstore1" class="text-yellow-600 font-semibold">@fathanstore1</a></p>
-        <p>📘 Facebook: <a href="https://facebook.com/fathanstore1" class="text-yellow-600 font-semibold">@fathanstore1</a></p>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-10">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-      <div class="flex items-center gap-4">
-        <img src="img/logo.jpg" alt="Logo Fathanstore" class="w-20 rounded-lg">
-        <div>
-          <h4 class="text-xl font-semibold">Fathanstore</h4>
-          <p class="text-sm text-gray-400">Raw Honey | Madu Alami Berkualitas</p>
-        </div>
-      </div>
-      <div class="text-right">
-        <p>&copy; 2025 Fathanstore. All rights reserved.</p>
-        <p class="text-sm text-gray-400">Instagram: @fathanstore | WhatsApp: +62 812-3456-7890</p>
-      </div>
+<footer id="kontak" class="bg-gray-900 text-white py-12">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+    
+    <!-- Kolom Kiri: Logo & Deskripsi -->
+    <div class="flex flex-col items-center md:items-start">
+      <img src="img/logo.jpg" alt="Logo Fathanstore" class="w-20 rounded-lg mb-3">
+      <h4 class="text-2xl font-semibold text-yellow-400">Madu Fathan</h4>
+      <p class="text-gray-400 text-sm leading-relaxed mt-2 max-w-xs">
+        Madu alami murni dari hutan dan kebun lokal.<br>
+        Menjaga kualitas, keaslian, dan manfaat terbaik untuk tubuh sehat setiap hari.
+      </p>
     </div>
-  </footer>
 
-  <!-- Script Menu Mobile -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-    menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
+    <!-- Kolom Tengah: Kontak -->
+    <div>
+      <h4 class="text-xl font-semibold text-yellow-400 mb-2">Kontak :</h4>
+      <p class="text-gray-300 text-sm leading-relaxed">
+        📞 +62 831 5361 1239<br>
+        📞 +62 858 1203 5125<br>
+        📸 Instagram: 
+        <a href="https://instagram.com/madufathan" class="text-yellow-400 hover:underline">@madufathan</a><br>
+        🎵 TikTok: 
+        <a href="https://tiktok.com/@madufathan" class="text-yellow-400 hover:underline">@madufathan</a>
+      </p>
+    </div>
 
-</body>
-</html>
+    <!-- Kolom Kanan: Alamat -->
+    <div class="md:text-right">
+      <h4 class="text-xl font-semibold text-yellow-400 mb-2">Alamat :</h4>
+      <p class="text-gray-300 text-sm leading-relaxed">
+        JL. Mawar 6<br>
+        Kel. Sindangrasa<br>
+        Kec. Bogor Timur, Kota Bogor
+      </p>
+    </div>
+  </div>
+
+  <!-- Garis bawah -->
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-sm">
+    &copy; 2025 Madu Fathan. All rights reserved.
+  </div>
+</footer>
