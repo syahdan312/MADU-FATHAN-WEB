@@ -1,0 +1,153 @@
+/* styles.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf7;
+  color: #333;
+}
+
+header.hero {
+  background: linear-gradient(to right, #ffce3d, #ffb300);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #ffb300;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffe082;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.produk-section h2,
+.info-section h2,
+.boost-section h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffb300;
+}
+
+.produk-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.produk-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.produk-card:hover {
+  transform: translateY(-5px);
+}
+
+.price {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ff8f00;
+}
+
+.boost-section {
+  background-color: #fff9e6;
+  border-top: 2px solid #ffecb3;
+  border-bottom: 2px solid #ffecb3;
+}
+
+.boost-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.boost-left img {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+  text-align: center;
+}
+
+.footer {
+  background: #ffb300;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  color: #fff3e0;
+}
+
+@media (max-width: 768px) {
+  header.hero h1 {
+    font-size: 32px;
+  }
+  .boost-content {
+    flex-direction: column;
+  }
+}
+
+/* Efek animasi muncul saat scroll */
+.produk-card,
+.card,
+.boost-left img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

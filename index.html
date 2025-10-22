@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madu Fathian</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="img/logo-removebg-preview.png" alt="Logo Fathanstore" class="w-10 h-10 rounded-md">
+        <span class="text-xl font-bold text-yellow-600">Madu Fathan</span>
+      </div>
+
+      <!-- Menu Desktop -->
+      <ul class="hidden md:flex gap-8 font-medium text-gray-700">
+        <li><a href="#home" class="hover:text-yellow-600 transition">Beranda</a></li>
+        <li><a href="#manfaat" class="hover:text-yellow-600 transition">Manfaat</a></li>
+        <li><a href="#produk" class="hover:text-yellow-600 transition">Produk</a></li>
+        <li><a href="#kontak" class="hover:text-yellow-600 transition">Kontak</a></li>
+      </ul>
+
+      <!-- Tombol Mobile -->
+      <button id="menu-btn" class="md:hidden text-gray-700 text-2xl focus:outline-none">☰</button>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="menu" class="hidden bg-white shadow-md md:hidden">
+      <ul class="flex flex-col gap-4 py-4 text-center font-medium text-gray-700">
+        <li><a href="#home" class="hover:text-yellow-600 transition">Beranda</a></li>
+        <li><a href="#manfaat" class="hover:text-yellow-600 transition">Manfaat</a></li>
+        <li><a href="#produk" class="hover:text-yellow-600 transition">Produk</a></li>
+        <li><a href="#kontak" class="hover:text-yellow-600 transition">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative pt-20">
+    <img src="img/Hutan.jpg" alt="Madu Fathian" class="w-full h-[600px] object-cover">
+    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+      <div class="text-center text-white max-w-xl">
+        <h1 class="text-4xl font-bold mb-4">MADU FATHAN</h1>
+        <p class="mb-6">
+          Madu Fathan adalah madu asli murni tanpa campuran atau pemanis buatan, dihasilkan dari nektar pilihan bunga hutan dan kebun lokal.
+          Dengan warna keemasan dan aroma bunga alami, madu ini memberikan rasa manis khas yang lembut namun kuat.
+          Cocok dikonsumsi sehari-hari untuk menambah energi, menjaga daya tahan tubuh, dan sebagai pemanis sehat alami.
+        </p>
+        <a href="#produk" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold">Pesan Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manfaat Section -->
+  <section id="manfaat" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10 text-gray-800">Manfaat Madu Fathian</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="flex flex-col items-center">
+          <img src="img/nutrisi madu.jpg" alt="Nutrisi Madu" class="rounded-2xl shadow-lg w-full max-w-md">
+          <h3 class="text-xl font-semibold mt-4">Sumber Energi Alami</h3>
+          <p class="mt-2 text-gray-600">Sisi kiri menampilkan seseorang berlari pagi di bawah sinar matahari dengan teks “Energy Boost”, menggambarkan manfaat madu sebagai sumber energi alami. 
+            Sisi kanan menunjukkan seseorang bekerja di depan laptop dengan teks “Focus & Immunity”, menonjolkan peran madu dalam meningkatkan konsentrasi dan menjaga daya tahan tubuh.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="img/daya tahan madu.jpg" alt="Daya Tahan Tubuh" class="rounded-2xl shadow-lg w-full max-w-md">
+          <h3 class="text-xl font-semibold mt-4">Meningkatkan Imunitas</h3>
+          <p class="mt-2 text-gray-600">Desain promosi produk Madu Fathan dengan tema “Boost Your Immunity”. Gambar menampilkan seorang wanita tersenyum sambil berpose kuat melambangkan daya tahan tubuh yang meningkat. Di sekelilingnya terdapat ilustrasi sel dan virus yang menggambarkan perlindungan tubuh dari penyakit. Latar belakang didominasi warna putih dengan elemen madu berwarna keemasan yang mengalir, mencerminkan kemurnian dan manfaat alami madu. Logo Madu Fathan ditempatkan di sudut bawah kanan, memperkuat identitas merek.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Madu, Propolis, Royal Jelly (versi asli lengkap) -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Madu -->
+      <div class="flex flex-col md:flex-row items-center gap-8 mb-20">
+        <img src="img/madu1.png" alt="Madu" class="w-full md:w-1/3 rounded-2xl shadow-md">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-3 flex items-center">🍯 Madu</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Madu adalah pemanis alami yang dihasilkan oleh lebah. Madu kaya akan asam amino, vitamin, dan mineral yang sangat baik untuk kesehatan dan daya tahan tubuh. 
+            Madu juga mengandung banyak senyawa antioksidan yang mampu menangkal radikal bebas penyebab penyakit. 
+            Selain itu, madu memiliki sifat antiinfeksi yang menjaga tubuh dari serangan penyakit.
+          </p>
+        </div>
+      </div>
+
+      <!-- Propolis -->
+      <div class="flex flex-col-reverse md:flex-row items-center gap-8 mb-20">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-3 flex items-center justify-end">🧱 Propolis</h2>
+          <p class="text-gray-700 leading-relaxed text-right">
+            Propolis adalah zat yang bersumber dari getah pohon bercampur nectar, digunakan lebah untuk menutup lubang sarang. 
+            Propolis memiliki banyak manfaat seperti menekan pertumbuhan bakteri, virus, dan jamur, serta meredakan peradangan (radang) di tubuh manusia.
+          </p>
+        </div>
+        <img src="img/madu2.png" alt="Propolis" class="w-full md:w-1/3 rounded-2xl shadow-md">
+      </div>
+
+      <!-- Royal Jelly -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="img/madu3.png" alt="Royal Jelly" class="w-full md:w-1/3 rounded-2xl shadow-md">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-3 flex items-center">🐝 Royal Jelly</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Royal jelly adalah nutrisi tinggi yang diproduksi lebah untuk ratu lebah. 
+            Mengandung vitamin, mineral, asam amino, dan lemak sehat. 
+            Membantu menjaga kulit, sistem imun, serta meningkatkan energi dan daya tahan tubuh secara alami.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk Kami -->
+  <section id="produk" class="py-16 bg-yellow-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10 text-gray-800">Produk Kami</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+          <img src="img/gambar madu 2.jpg" alt="Produk Madu Fathian 1" class="rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Madu Extra</h3>
+          <p class="text-gray-600 mb-4">Madu murni dengan manfaat ekstra! Diperkaya nutrisi alami untuk bantu tingkatkan stamina, jaga imun, dan beri energi lebih setiap hari.</p>
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg">Beli Sekarang</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+          <img src="img/gambar madu 2.jpg" alt="Produk Madu Fathian 1" class="rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Madu Murni</h3>
+          <p class="text-gray-600 mb-4">Madu alami tanpa campuran, langsung dari sarang lebah. Kaya akan enzim, vitamin, dan antioksidan. Cocok untuk menjaga daya tahan tubuh, meredakan batuk, dan sebagai pemanis sehat alami.</p>
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg">Beli Sekarang</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+          <img src="img/gambar madu 3.jpg" alt="Produk Madu Fathian 2" class="rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Madu Straw</h3>
+          <p class="text-gray-600 mb-4">Madu murni dalam kemasan praktis berbentuk sedotan. Mudah dikonsumsi langsung dan cocok untuk dibawa ke mana saja.</p>
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg">Beli Sekarang</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+          <img src="img/gambar madu 3.jpg" alt="Produk Madu Fathian 1" class="rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Madu Hutan Premium</h3>
+          <p class="text-gray-600 mb-4">Madu alami tanpa campuran, langsung dari sarang lebah hutan. Mengandung banyak enzim dan antioksidan alami untuk tubuh sehat dan kuat.</p>
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg">Beli Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800">Hubungi Kami</h2>
+      <p class="text-gray-600 mb-6">
+        Ingin memesan madu Fathan atau punya pertanyaan? Hubungi kami melalui WhatsApp atau media sosial berikut:
+      </p>
+      <div class="space-y-3 text-gray-700">
+        <p>📱 WhatsApp: <a href="https://wa.me/6281234567890" class="text-yellow-600 font-semibold">+62 812-3456-7890</a></p>
+        <p>📸 Instagram: <a href="https://instagram.com/fathanstore" class="text-yellow-600 font-semibold">@fathanstore</a></p>
+        <p>🎵 TikTok: <a href="https://tiktok.com/@fathanstore1" class="text-yellow-600 font-semibold">@fathanstore1</a></p>
+        <p>📘 Facebook: <a href="https://facebook.com/fathanstore1" class="text-yellow-600 font-semibold">@fathanstore1</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div class="flex items-center gap-4">
+        <img src="img/logo.jpg" alt="Logo Fathanstore" class="w-20 rounded-lg">
+        <div>
+          <h4 class="text-xl font-semibold">Fathanstore</h4>
+          <p class="text-sm text-gray-400">Raw Honey | Madu Alami Berkualitas</p>
+        </div>
+      </div>
+      <div class="text-right">
+        <p>&copy; 2025 Fathanstore. All rights reserved.</p>
+        <p class="text-sm text-gray-400">Instagram: @fathanstore | WhatsApp: +62 812-3456-7890</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Menu Mobile -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
